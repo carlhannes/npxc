@@ -1,0 +1,15 @@
+{
+  "name": "npxc",
+  "version": "0.0.1",
+  "description": "execute the closest bin file",
+  "main": "index.js",
+  "bin": {
+    "npxc": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "author": "carlhannes",
+  "license": "MIT",
+  "dependencies": {}
+}
