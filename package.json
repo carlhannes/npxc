@@ -1,15 +1,25 @@
 {
   "name": "npxc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "execute the closest bin file",
-  "main": "index.js",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "ava test/**.js"
+  },
   "bin": {
-    "npxc": "./index.js"
+    "npxc": "./src/index.js"
   },
   "files": [
-    "index.js"
+    "./src"
   ],
   "author": "carlhannes",
   "license": "MIT",
-  "dependencies": {}
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  }
 }
